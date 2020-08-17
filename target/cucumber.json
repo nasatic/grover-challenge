@@ -1,0 +1,659 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Resources is available",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2425768900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "resource is available",
+            "match": {
+              "location": "stepDefinition.resource_is_available()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Get user details",
+        "description": "",
+        "id": "search-and-retrieve-user;get-user-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 129745600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I make a request with parameter \"?username\u003dKamren\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "?username\u003dKamren",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.iMakeARequestWithParameter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 520715100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The correct user details should be returned",
+            "match": {
+              "location": "stepDefinition.userIdentification()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Resources is available",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 122616600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "resource is available",
+            "match": {
+              "location": "stepDefinition.resource_is_available()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Get posts written by above user",
+        "description": "",
+        "id": "search-and-retrieve-user;get-posts-written-by-above-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 242045600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I make a request to fetch posts by user",
+            "match": {
+              "location": "stepDefinition.iMakeARequestToFetchPostsByUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16793400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "correct posts should be returned",
+            "match": {
+              "location": "stepDefinition.correctPostsShouldBeReturned()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Resources is available",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 106963900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "resource is available",
+            "match": {
+              "location": "stepDefinition.resource_is_available()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Fetch comments from user posts",
+        "description": "",
+        "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 210123400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I make a request to fetch comment for \"postId1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId1",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12959700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "response for \"postId1\" should contain \"Noemie@marques.me\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId1",
+                  "offset": 14
+                },
+                {
+                  "val": "Noemie@marques.me",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.responseForShouldContain(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4391200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "email should be in the correct format for \"postId1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId1",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Resources is available",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 102274700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "resource is available",
+            "match": {
+              "location": "stepDefinition.resource_is_available()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Fetch comments from user posts",
+        "description": "",
+        "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 292411000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I make a request to fetch comment for \"postId2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId2",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14645600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "response for \"postId2\" should contain \"Khalil@emile.co.uk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId2",
+                  "offset": 14
+                },
+                {
+                  "val": "Khalil@emile.co.uk",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.responseForShouldContain(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 830700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "email should be in the correct format for \"postId2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId2",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Resources is available",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 100855900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "resource is available",
+            "match": {
+              "location": "stepDefinition.resource_is_available()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Fetch comments from user posts",
+        "description": "",
+        "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 228390700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I make a request to fetch comment for \"postId3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId3",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8867800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "response for \"postId3\" should contain \"Sophia@arianna.co.uk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId3",
+                  "offset": 14
+                },
+                {
+                  "val": "Sophia@arianna.co.uk",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.responseForShouldContain(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 692400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "email should be in the correct format for \"postId3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId3",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Resources is available",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 104263300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "resource is available",
+            "match": {
+              "location": "stepDefinition.resource_is_available()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Fetch comments from user posts",
+        "description": "",
+        "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 232299000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I make a request to fetch comment for \"postId4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId4",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21373100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "response for \"postId4\" should contain \"Jeffery@juwan.us\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId4",
+                  "offset": 14
+                },
+                {
+                  "val": "Jeffery@juwan.us",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.responseForShouldContain(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 568100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "email should be in the correct format for \"postId4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId4",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Resources is available",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 97750600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "resource is available",
+            "match": {
+              "location": "stepDefinition.resource_is_available()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Fetch comments from user posts",
+        "description": "",
+        "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 242108300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I make a request to fetch comment for \"postId5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId5",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9906300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "response for \"postId5\" should contain \"Isaias_Kuhic@jarrett.net\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId5",
+                  "offset": 14
+                },
+                {
+                  "val": "Isaias_Kuhic@jarrett.net",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinition.responseForShouldContain(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 529200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "email should be in the correct format for \"postId5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postId5",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@getUser"
+          }
+        ]
+      }
+    ],
+    "name": "Search and retrieve user",
+    "description": "",
+    "id": "search-and-retrieve-user",
+    "keyword": "Feature",
+    "uri": "user-search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@getUser"
+      }
+    ]
+  }
+]
