@@ -1,6 +1,6 @@
 INSTRUCTIONS
 
-Clone the repo: Git: https://github.com/nasatic/grover-challenge.git.
+Clone the repo: from git bash or windows command line, run <git clone https://github.com/nasatic/grover-challenge.git>.
 
 Running project:
 
