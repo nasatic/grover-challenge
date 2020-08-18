@@ -22,7 +22,6 @@ public class stepDefinition {
     Logger logger = Logger.getLogger(stepDefinition.class);
     final String baseURI = "https://jsonplaceholder.typicode.com";
     final String sRegex = "([a-zA-Z0-9]+(?:[._+-][a-zA-Z0-9]+)*)@([a-zA-Z0-9]+(?:[.-][a-zA-Z0-9]+)*[.][a-zA-Z]{2,})";
-    //    final String sRegex = "[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}";
     Response response;
     List sPosts;
 
