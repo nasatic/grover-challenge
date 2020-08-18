@@ -1,4 +1,4 @@
-@getUser
+@Kamren
 Feature: Search and retrieve comments posted by user Kamren
 
   Background: Resources is available
