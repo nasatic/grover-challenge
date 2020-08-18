@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 
 /**
  * This is a runner class to run cucumber scenario(s) for all or selected feature.
+ *
  * @Params: file, sValue,
  */
 
@@ -16,4 +17,5 @@ import org.junit.runner.RunWith;
         format = {"pretty", "html:target/cucumber-html-reports", "json:target/cucumber.json"},
         tags = {"@Kamren"})
 public class testRunner {
+
 }

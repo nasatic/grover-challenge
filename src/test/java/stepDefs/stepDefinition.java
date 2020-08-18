@@ -19,13 +19,14 @@ import static org.junit.Assert.*;
  */
 
 public class stepDefinition {
-    static Logger logger = Logger.getLogger(stepDefinition.class.toString());
+    static Logger logger = Logger.getLogger(stepDefinition.class.getName());
     final String baseURI = "https://jsonplaceholder.typicode.com";
     final String sRegex = "([a-zA-Z0-9]+(?:[._+-][a-zA-Z0-9]+)*)@([a-zA-Z0-9]+(?:[.-][a-zA-Z0-9]+)*[.][a-zA-Z]{2,})";
     //    final String sRegex = "[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}";
     Response response;
     String sResponse;
     List sPosts;
+
 
     @Given("^resource is available$")
     public void resource_is_available() {
@@ -110,9 +111,9 @@ public class stepDefinition {
             case "postId5":
                 assertEquals(sPosts.get(4), sEmail);
                 break;
-
+            default:
+                logger.info("============== Default Case Executed ==================");
         }
-
     }
 
     @And("^email should be in the correct format for \"([^\"]*)\"$")
@@ -141,9 +142,7 @@ public class stepDefinition {
                 break;
 
             default:
-                logger.info("++++++++++++++++ Default switch case +++++++++++++++++++");
+                logger.info("================ Default switch case executed ====================");
         }
-
     }
-
 }
