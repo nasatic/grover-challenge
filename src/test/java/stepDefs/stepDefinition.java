@@ -20,14 +20,11 @@ import static org.junit.Assert.*;
 
 public class stepDefinition {
     Logger logger = Logger.getLogger(stepDefinition.class);
-//    static Logger logger = Logger.getLogger(stepDefinition.class.getName());
     final String baseURI = "https://jsonplaceholder.typicode.com";
     final String sRegex = "([a-zA-Z0-9]+(?:[._+-][a-zA-Z0-9]+)*)@([a-zA-Z0-9]+(?:[.-][a-zA-Z0-9]+)*[.][a-zA-Z]{2,})";
     //    final String sRegex = "[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}";
     Response response;
-    String sResponse;
     List sPosts;
-
 
     @Given("^resource is available$")
     public void resource_is_available() {
@@ -56,13 +53,9 @@ public class stepDefinition {
     @Then("^correct posts should be returned$")
     public void correctPostsShouldBeReturned() {
         List res = response.then().extract().path("id");
-        logger.info("===============: " + res);
-//        logger.finer("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-//        logger.warning("This is important warning message");
+        logger.info("========== post ids by user "+sPosts.get(0)+ ": " + res);
         assertEquals(res.size(), 10);
-
     }
-
 
     @When("^I make a request to fetch comment for \"([^\"]*)\"$")
     public Response iMakeARequestToFetchCommentFor(String sCase) {
@@ -116,23 +109,23 @@ public class stepDefinition {
         String pattern = Pattern.compile(sRegex).toString();
         switch (sCase) {
             case "postId1":
-                logger.info("==========:" + sPosts.get(0) + "============");
+                logger.info("========== First email from record: " + sPosts.get(0) + "============");
                 assertThat(sPosts.get(0).toString(), matchesPattern(pattern));
                 break;
             case "postId2":
-                logger.info("==========:" + sPosts.get(1) + "============");
+                logger.info("==========Second email from record: " + sPosts.get(1) + "============");
                 assertThat(sPosts.get(1).toString(), matchesPattern(pattern));
                 break;
             case "postId3":
-                logger.info("==========:" + sPosts.get(2) + "============");
+                logger.info("==========Third email from record: " + sPosts.get(2) + "=============");
                 assertThat(sPosts.get(2).toString(), matchesPattern(pattern));
                 break;
             case "postId4":
-                logger.info("==========:" + sPosts.get(3) + "============");
+                logger.info("==========Fourth email from record: " + sPosts.get(3) + "============");
                 assertThat(sPosts.get(3).toString(), matchesPattern(pattern));
                 break;
             case "postId5":
-                logger.info("==========:" + sPosts.get(4) + "============");
+                logger.info("==========Fifth email from record: " + sPosts.get(4) + "=============");
                 assertThat(sPosts.get(4).toString(), matchesPattern(pattern));
                 break;
 
