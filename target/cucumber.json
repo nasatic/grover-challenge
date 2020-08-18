@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2425768900,
+              "duration": 2121700900,
               "status": "passed"
             },
             "line": 5,
@@ -33,7 +33,7 @@
         "steps": [
           {
             "result": {
-              "duration": 129745600,
+              "duration": 219785000,
               "status": "passed"
             },
             "line": 8,
@@ -51,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 520715100,
+              "duration": 562798900,
               "status": "passed"
             },
             "line": 9,
@@ -72,7 +72,7 @@
         "steps": [
           {
             "result": {
-              "duration": 122616600,
+              "duration": 216010200,
               "status": "passed"
             },
             "line": 5,
@@ -94,7 +94,7 @@
         "steps": [
           {
             "result": {
-              "duration": 242045600,
+              "duration": 430938300,
               "status": "passed"
             },
             "line": 12,
@@ -106,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 16793400,
+              "duration": 30762400,
               "status": "passed"
             },
             "line": 13,
@@ -127,7 +127,7 @@
         "steps": [
           {
             "result": {
-              "duration": 106963900,
+              "duration": 186262400,
               "status": "passed"
             },
             "line": 5,
@@ -140,7 +140,7 @@
         ]
       },
       {
-        "line": 24,
+        "line": 21,
         "name": "Fetch comments from user posts",
         "description": "",
         "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;2",
@@ -149,10 +149,10 @@
         "steps": [
           {
             "result": {
-              "duration": 210123400,
+              "duration": 394199700,
               "status": "passed"
             },
-            "line": 19,
+            "line": 16,
             "name": "I make a request to fetch comment for \"postId1\"",
             "match": {
               "arguments": [
@@ -170,10 +170,10 @@
           },
           {
             "result": {
-              "duration": 12959700,
+              "duration": 11374600,
               "status": "passed"
             },
-            "line": 20,
+            "line": 17,
             "name": "response for \"postId1\" should contain \"Noemie@marques.me\"",
             "match": {
               "arguments": [
@@ -196,10 +196,10 @@
           },
           {
             "result": {
-              "duration": 4391200,
+              "duration": 2960600,
               "status": "passed"
             },
-            "line": 21,
+            "line": 18,
             "name": "email should be in the correct format for \"postId1\"",
             "match": {
               "arguments": [
@@ -232,7 +232,7 @@
         "steps": [
           {
             "result": {
-              "duration": 102274700,
+              "duration": 183143500,
               "status": "passed"
             },
             "line": 5,
@@ -245,7 +245,7 @@
         ]
       },
       {
-        "line": 25,
+        "line": 22,
         "name": "Fetch comments from user posts",
         "description": "",
         "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;3",
@@ -254,10 +254,10 @@
         "steps": [
           {
             "result": {
-              "duration": 292411000,
+              "duration": 427869400,
               "status": "passed"
             },
-            "line": 19,
+            "line": 16,
             "name": "I make a request to fetch comment for \"postId2\"",
             "match": {
               "arguments": [
@@ -275,10 +275,10 @@
           },
           {
             "result": {
-              "duration": 14645600,
+              "duration": 11211900,
               "status": "passed"
             },
-            "line": 20,
+            "line": 17,
             "name": "response for \"postId2\" should contain \"Khalil@emile.co.uk\"",
             "match": {
               "arguments": [
@@ -301,10 +301,10 @@
           },
           {
             "result": {
-              "duration": 830700,
+              "duration": 472500,
               "status": "passed"
             },
-            "line": 21,
+            "line": 18,
             "name": "email should be in the correct format for \"postId2\"",
             "match": {
               "arguments": [
@@ -337,7 +337,7 @@
         "steps": [
           {
             "result": {
-              "duration": 100855900,
+              "duration": 251329600,
               "status": "passed"
             },
             "line": 5,
@@ -350,7 +350,7 @@
         ]
       },
       {
-        "line": 26,
+        "line": 23,
         "name": "Fetch comments from user posts",
         "description": "",
         "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;4",
@@ -359,10 +359,10 @@
         "steps": [
           {
             "result": {
-              "duration": 228390700,
+              "duration": 576363200,
               "status": "passed"
             },
-            "line": 19,
+            "line": 16,
             "name": "I make a request to fetch comment for \"postId3\"",
             "match": {
               "arguments": [
@@ -380,10 +380,10 @@
           },
           {
             "result": {
-              "duration": 8867800,
+              "duration": 37376800,
               "status": "passed"
             },
-            "line": 20,
+            "line": 17,
             "name": "response for \"postId3\" should contain \"Sophia@arianna.co.uk\"",
             "match": {
               "arguments": [
@@ -406,10 +406,10 @@
           },
           {
             "result": {
-              "duration": 692400,
+              "duration": 810200,
               "status": "passed"
             },
-            "line": 21,
+            "line": 18,
             "name": "email should be in the correct format for \"postId3\"",
             "match": {
               "arguments": [
@@ -442,7 +442,7 @@
         "steps": [
           {
             "result": {
-              "duration": 104263300,
+              "duration": 174797400,
               "status": "passed"
             },
             "line": 5,
@@ -455,7 +455,7 @@
         ]
       },
       {
-        "line": 27,
+        "line": 24,
         "name": "Fetch comments from user posts",
         "description": "",
         "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;5",
@@ -464,10 +464,10 @@
         "steps": [
           {
             "result": {
-              "duration": 232299000,
+              "duration": 423336100,
               "status": "passed"
             },
-            "line": 19,
+            "line": 16,
             "name": "I make a request to fetch comment for \"postId4\"",
             "match": {
               "arguments": [
@@ -485,10 +485,10 @@
           },
           {
             "result": {
-              "duration": 21373100,
+              "duration": 8951000,
               "status": "passed"
             },
-            "line": 20,
+            "line": 17,
             "name": "response for \"postId4\" should contain \"Jeffery@juwan.us\"",
             "match": {
               "arguments": [
@@ -511,10 +511,10 @@
           },
           {
             "result": {
-              "duration": 568100,
+              "duration": 420700,
               "status": "passed"
             },
-            "line": 21,
+            "line": 18,
             "name": "email should be in the correct format for \"postId4\"",
             "match": {
               "arguments": [
@@ -547,7 +547,7 @@
         "steps": [
           {
             "result": {
-              "duration": 97750600,
+              "duration": 173472200,
               "status": "passed"
             },
             "line": 5,
@@ -560,7 +560,7 @@
         ]
       },
       {
-        "line": 28,
+        "line": 25,
         "name": "Fetch comments from user posts",
         "description": "",
         "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;6",
@@ -569,10 +569,10 @@
         "steps": [
           {
             "result": {
-              "duration": 242108300,
+              "duration": 424107500,
               "status": "passed"
             },
-            "line": 19,
+            "line": 16,
             "name": "I make a request to fetch comment for \"postId5\"",
             "match": {
               "arguments": [
@@ -590,10 +590,10 @@
           },
           {
             "result": {
-              "duration": 9906300,
+              "duration": 34736700,
               "status": "passed"
             },
-            "line": 20,
+            "line": 17,
             "name": "response for \"postId5\" should contain \"Isaias_Kuhic@jarrett.net\"",
             "match": {
               "arguments": [
@@ -616,10 +616,10 @@
           },
           {
             "result": {
-              "duration": 529200,
+              "duration": 825800,
               "status": "passed"
             },
-            "line": 21,
+            "line": 18,
             "name": "email should be in the correct format for \"postId5\"",
             "match": {
               "arguments": [

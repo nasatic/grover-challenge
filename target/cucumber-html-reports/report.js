@@ -28,7 +28,7 @@ formatter.match({
   "location": "stepDefinition.resource_is_available()"
 });
 formatter.result({
-  "duration": 2425768900,
+  "duration": 2121700900,
   "status": "passed"
 });
 formatter.scenario({
@@ -59,14 +59,14 @@ formatter.match({
   "location": "stepDefinition.iMakeARequestWithParameter(String)"
 });
 formatter.result({
-  "duration": 129745600,
+  "duration": 219785000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefinition.userIdentification()"
 });
 formatter.result({
-  "duration": 520715100,
+  "duration": 562798900,
   "status": "passed"
 });
 formatter.background({
@@ -85,7 +85,7 @@ formatter.match({
   "location": "stepDefinition.resource_is_available()"
 });
 formatter.result({
-  "duration": 122616600,
+  "duration": 216010200,
   "status": "passed"
 });
 formatter.scenario({
@@ -110,28 +110,18 @@ formatter.match({
   "location": "stepDefinition.iMakeARequestToFetchPostsByUser()"
 });
 formatter.result({
-  "duration": 242045600,
+  "duration": 430938300,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefinition.correctPostsShouldBeReturned()"
 });
 formatter.result({
-  "duration": 16793400,
+  "duration": 30762400,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 15,
-      "value": "#    Scenario: Get comments by user"
-    },
-    {
-      "line": 16,
-      "value": "#    And I make a request using the userId"
-    }
-  ],
-  "line": 18,
+  "line": 15,
   "name": "Fetch comments from user posts",
   "description": "",
   "id": "search-and-retrieve-user;fetch-comments-from-user-posts",
@@ -139,22 +129,22 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "I make a request to fetch comment for \"\u003cposts\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "response for \"\u003cposts\u003e\" should contain \"\u003cemail\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "email should be in the correct format for \"\u003cposts\u003e\"",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 22,
+  "line": 19,
   "name": "",
   "description": "",
   "id": "search-and-retrieve-user;fetch-comments-from-user-posts;",
@@ -164,7 +154,7 @@ formatter.examples({
         "posts",
         "email"
       ],
-      "line": 23,
+      "line": 20,
       "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;1"
     },
     {
@@ -172,7 +162,7 @@ formatter.examples({
         "postId1",
         "Noemie@marques.me"
       ],
-      "line": 24,
+      "line": 21,
       "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;2"
     },
     {
@@ -180,7 +170,7 @@ formatter.examples({
         "postId2",
         "Khalil@emile.co.uk"
       ],
-      "line": 25,
+      "line": 22,
       "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;3"
     },
     {
@@ -188,7 +178,7 @@ formatter.examples({
         "postId3",
         "Sophia@arianna.co.uk"
       ],
-      "line": 26,
+      "line": 23,
       "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;4"
     },
     {
@@ -196,7 +186,7 @@ formatter.examples({
         "postId4",
         "Jeffery@juwan.us"
       ],
-      "line": 27,
+      "line": 24,
       "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;5"
     },
     {
@@ -204,7 +194,7 @@ formatter.examples({
         "postId5",
         "Isaias_Kuhic@jarrett.net"
       ],
-      "line": 28,
+      "line": 25,
       "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;6"
     }
   ],
@@ -226,11 +216,11 @@ formatter.match({
   "location": "stepDefinition.resource_is_available()"
 });
 formatter.result({
-  "duration": 106963900,
+  "duration": 186262400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 24,
+  "line": 21,
   "name": "Fetch comments from user posts",
   "description": "",
   "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;2",
@@ -244,7 +234,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "I make a request to fetch comment for \"postId1\"",
   "matchedColumns": [
     0
@@ -252,7 +242,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "response for \"postId1\" should contain \"Noemie@marques.me\"",
   "matchedColumns": [
     0,
@@ -261,7 +251,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "email should be in the correct format for \"postId1\"",
   "matchedColumns": [
     0
@@ -278,7 +268,7 @@ formatter.match({
   "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
 });
 formatter.result({
-  "duration": 210123400,
+  "duration": 394199700,
   "status": "passed"
 });
 formatter.match({
@@ -295,7 +285,7 @@ formatter.match({
   "location": "stepDefinition.responseForShouldContain(String,String)"
 });
 formatter.result({
-  "duration": 12959700,
+  "duration": 11374600,
   "status": "passed"
 });
 formatter.match({
@@ -308,7 +298,7 @@ formatter.match({
   "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
 });
 formatter.result({
-  "duration": 4391200,
+  "duration": 2960600,
   "status": "passed"
 });
 formatter.background({
@@ -327,11 +317,11 @@ formatter.match({
   "location": "stepDefinition.resource_is_available()"
 });
 formatter.result({
-  "duration": 102274700,
+  "duration": 183143500,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 25,
+  "line": 22,
   "name": "Fetch comments from user posts",
   "description": "",
   "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;3",
@@ -345,7 +335,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "I make a request to fetch comment for \"postId2\"",
   "matchedColumns": [
     0
@@ -353,7 +343,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "response for \"postId2\" should contain \"Khalil@emile.co.uk\"",
   "matchedColumns": [
     0,
@@ -362,7 +352,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "email should be in the correct format for \"postId2\"",
   "matchedColumns": [
     0
@@ -379,7 +369,7 @@ formatter.match({
   "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
 });
 formatter.result({
-  "duration": 292411000,
+  "duration": 427869400,
   "status": "passed"
 });
 formatter.match({
@@ -396,7 +386,7 @@ formatter.match({
   "location": "stepDefinition.responseForShouldContain(String,String)"
 });
 formatter.result({
-  "duration": 14645600,
+  "duration": 11211900,
   "status": "passed"
 });
 formatter.match({
@@ -409,7 +399,7 @@ formatter.match({
   "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
 });
 formatter.result({
-  "duration": 830700,
+  "duration": 472500,
   "status": "passed"
 });
 formatter.background({
@@ -428,11 +418,11 @@ formatter.match({
   "location": "stepDefinition.resource_is_available()"
 });
 formatter.result({
-  "duration": 100855900,
+  "duration": 251329600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 26,
+  "line": 23,
   "name": "Fetch comments from user posts",
   "description": "",
   "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;4",
@@ -446,7 +436,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "I make a request to fetch comment for \"postId3\"",
   "matchedColumns": [
     0
@@ -454,7 +444,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "response for \"postId3\" should contain \"Sophia@arianna.co.uk\"",
   "matchedColumns": [
     0,
@@ -463,7 +453,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "email should be in the correct format for \"postId3\"",
   "matchedColumns": [
     0
@@ -480,7 +470,7 @@ formatter.match({
   "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
 });
 formatter.result({
-  "duration": 228390700,
+  "duration": 576363200,
   "status": "passed"
 });
 formatter.match({
@@ -497,7 +487,7 @@ formatter.match({
   "location": "stepDefinition.responseForShouldContain(String,String)"
 });
 formatter.result({
-  "duration": 8867800,
+  "duration": 37376800,
   "status": "passed"
 });
 formatter.match({
@@ -510,7 +500,7 @@ formatter.match({
   "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
 });
 formatter.result({
-  "duration": 692400,
+  "duration": 810200,
   "status": "passed"
 });
 formatter.background({
@@ -529,11 +519,11 @@ formatter.match({
   "location": "stepDefinition.resource_is_available()"
 });
 formatter.result({
-  "duration": 104263300,
+  "duration": 174797400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 27,
+  "line": 24,
   "name": "Fetch comments from user posts",
   "description": "",
   "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;5",
@@ -547,7 +537,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "I make a request to fetch comment for \"postId4\"",
   "matchedColumns": [
     0
@@ -555,7 +545,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "response for \"postId4\" should contain \"Jeffery@juwan.us\"",
   "matchedColumns": [
     0,
@@ -564,7 +554,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "email should be in the correct format for \"postId4\"",
   "matchedColumns": [
     0
@@ -581,7 +571,7 @@ formatter.match({
   "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
 });
 formatter.result({
-  "duration": 232299000,
+  "duration": 423336100,
   "status": "passed"
 });
 formatter.match({
@@ -598,7 +588,7 @@ formatter.match({
   "location": "stepDefinition.responseForShouldContain(String,String)"
 });
 formatter.result({
-  "duration": 21373100,
+  "duration": 8951000,
   "status": "passed"
 });
 formatter.match({
@@ -611,7 +601,7 @@ formatter.match({
   "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
 });
 formatter.result({
-  "duration": 568100,
+  "duration": 420700,
   "status": "passed"
 });
 formatter.background({
@@ -630,11 +620,11 @@ formatter.match({
   "location": "stepDefinition.resource_is_available()"
 });
 formatter.result({
-  "duration": 97750600,
+  "duration": 173472200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 28,
+  "line": 25,
   "name": "Fetch comments from user posts",
   "description": "",
   "id": "search-and-retrieve-user;fetch-comments-from-user-posts;;6",
@@ -648,7 +638,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 19,
+  "line": 16,
   "name": "I make a request to fetch comment for \"postId5\"",
   "matchedColumns": [
     0
@@ -656,7 +646,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 20,
+  "line": 17,
   "name": "response for \"postId5\" should contain \"Isaias_Kuhic@jarrett.net\"",
   "matchedColumns": [
     0,
@@ -665,7 +655,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 18,
   "name": "email should be in the correct format for \"postId5\"",
   "matchedColumns": [
     0
@@ -682,7 +672,7 @@ formatter.match({
   "location": "stepDefinition.iMakeARequestToFetchCommentFor(String)"
 });
 formatter.result({
-  "duration": 242108300,
+  "duration": 424107500,
   "status": "passed"
 });
 formatter.match({
@@ -699,7 +689,7 @@ formatter.match({
   "location": "stepDefinition.responseForShouldContain(String,String)"
 });
 formatter.result({
-  "duration": 9906300,
+  "duration": 34736700,
   "status": "passed"
 });
 formatter.match({
@@ -712,7 +702,7 @@ formatter.match({
   "location": "stepDefinition.shouldBeInTheCorrectFormatFor(String)"
 });
 formatter.result({
-  "duration": 529200,
+  "duration": 825800,
   "status": "passed"
 });
 });

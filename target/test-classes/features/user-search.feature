@@ -12,9 +12,6 @@ Feature: Search and retrieve user
     When I make a request to fetch posts by user
     Then correct posts should be returned
 
-#    Scenario: Get comments by user
-#    And I make a request using the userId
-
   Scenario Outline: Fetch comments from user posts
     When I make a request to fetch comment for "<posts>"
     Then response for "<posts>" should contain "<email>"

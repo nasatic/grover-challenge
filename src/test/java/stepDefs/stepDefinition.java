@@ -118,7 +118,6 @@ public class stepDefinition {
     @And("^email should be in the correct format for \"([^\"]*)\"$")
     public void shouldBeInTheCorrectFormatFor(String sCase) {
         String pattern = Pattern.compile(sRegex).toString();
-
         switch (sCase) {
             case "postId1":
                 logger.info("==========:" + sPosts.get(0) + "============");
