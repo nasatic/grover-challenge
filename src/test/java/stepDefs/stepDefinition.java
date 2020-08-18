@@ -5,9 +5,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.restassured.response.Response;
+import org.apache.log4j.Logger;
 
 import java.util.List;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 import static com.jcabi.matchers.RegexMatchers.matchesPattern;
@@ -19,7 +19,8 @@ import static org.junit.Assert.*;
  */
 
 public class stepDefinition {
-    static Logger logger = Logger.getLogger(stepDefinition.class.getName());
+    Logger logger = Logger.getLogger(stepDefinition.class);
+//    static Logger logger = Logger.getLogger(stepDefinition.class.getName());
     final String baseURI = "https://jsonplaceholder.typicode.com";
     final String sRegex = "([a-zA-Z0-9]+(?:[._+-][a-zA-Z0-9]+)*)@([a-zA-Z0-9]+(?:[.-][a-zA-Z0-9]+)*[.][a-zA-Z]{2,})";
     //    final String sRegex = "[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}";
@@ -56,18 +57,12 @@ public class stepDefinition {
     public void correctPostsShouldBeReturned() {
         List res = response.then().extract().path("id");
         logger.info("===============: " + res);
+//        logger.finer("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+//        logger.warning("This is important warning message");
         assertEquals(res.size(), 10);
 
     }
 
-    @When("^I make a request on \"([^\"]*)\" for posts written by user \"([^\"]*)\"$")
-    public void iMakeARequestOnForPostsWrittenByUser(String endPoint, String arg1) {
-        List res = response.then().extract().path("id");
-        logger.info("+++++++++++++++ " + res.get(0));
-        sResponse = res.get(0).toString();
-        response = given().log().all().when().get(baseURI + endPoint + "?userId=" + sResponse);
-        logger.info(response.asString());
-    }
 
     @When("^I make a request to fetch comment for \"([^\"]*)\"$")
     public Response iMakeARequestToFetchCommentFor(String sCase) {
